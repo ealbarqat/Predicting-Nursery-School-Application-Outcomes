@@ -1,0 +1,29 @@
+Model Performance Results
+=======================
+
+Decision Tree Results:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       870
+           1       0.99      0.99      0.99       873
+           2       0.00      0.00      0.00         2
+           3       1.00      0.99      0.99       785
+           4       0.93      1.00      0.96        62
+
+    accuracy                           0.99      2592
+   macro avg       0.78      0.80      0.79      2592
+weighted avg       0.99      0.99      0.99      2592
+
+
+Random Forest Results:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       870
+           1       0.97      0.97      0.97       873
+           2       0.00      0.00      0.00         2
+           3       0.97      0.98      0.98       785
+           4       0.96      0.77      0.86        62
+
+    accuracy                           0.98      2592
+   macro avg       0.78      0.75      0.76      2592
+weighted avg       0.98      0.98      0.98      2592
