@@ -4,6 +4,7 @@
 - **Title**: Predicting Nursery School Application Outcomes: A Data-Driven Approach
 - **Group Members**: [Your Names]
 - **Course**: Knowledge Discovery and Data Mining
+- **Image**: None (Title slide)
 
 ## Slide 2: Problem Statement
 - **What**: Automating and improving nursery school admission decisions
@@ -15,6 +16,7 @@
   - Faster processing of applications
   - More objective evaluation
   - Better resource allocation
+- **Image**: None (Text-based slide)
 
 ## Slide 3: About the Data
 - **Source**: UCI Machine Learning Repository
@@ -25,6 +27,7 @@
   - Rich in social and family context
   - Clean and well-structured
   - No privacy concerns (GDPR compliant)
+- **Image**: None (Text-based slide)
 
 ## Slide 4: Exploratory Data Analysis - Overview
 - **Data Structure**:
@@ -46,9 +49,10 @@
   - Identifying relationships
   - Planning preprocessing steps
   - Guiding model selection
+- **Image**: None (Text-based slide)
 
 ## Slide 5: EDA - Class Distribution
-- **Target Variable Analysis** [Show class_distribution_bar.png]
+- **Target Variable Analysis** [Show: results/class_distribution_bar.png]
   - "not_recom": 4,320 cases (33.3%)
   - "priority": 4,266 cases (32.9%)
   - "spec_prior": 4,044 cases (31.2%)
@@ -61,7 +65,7 @@
   - Important for model evaluation
 
 ## Slide 6: EDA - Feature Distributions
-- **Balanced Features** [Show stacked bar charts]
+- **Balanced Features** [Show: results/parents_vs_class_stacked.png, results/has_nurs_vs_class_stacked.png]
   - Parents: Equal distribution (33.3% each)
   - Has_nurs: Five equal categories (20% each)
   - Form: Four equal categories (25% each)
@@ -73,12 +77,12 @@
   - Reliable predictions
 
 ## Slide 7: EDA - Key Relationships
-- **Feature Importance** [Show feature_importance.png]
+- **Feature Importance** [Show: results/feature_importance.png]
   - Health status: Most critical (30%)
   - Financial status: Second most important
   - Social status: Third most important
   - Nursery quality: Moderate importance
-- **Correlations** [Show correlation_heatmap.png]
+- **Correlations** [Show: results/correlation_heatmap.png]
   - Health → Class: Strong positive
   - Finance → Social: Moderate
   - Parents → Housing: Moderate
@@ -106,6 +110,7 @@
   - Automated decision support
   - Clear policy guidelines
   - Fair evaluation system
+- **Image**: None (Text-based slide)
 
 ## Slide 9: Data Preparation
 - **Steps**:
@@ -117,6 +122,7 @@
   - Proper splitting ensures reliable evaluation
   - Prevents data leakage
   - Ensures model generalizability
+- **Image**: None (Text-based slide)
 
 ## Slide 10: Model Selection
 - **Models Used**:
@@ -131,66 +137,10 @@
     - Better accuracy
     - Reduces overfitting
     - Handles non-linear relationships
+- **Image**: None (Text-based slide)
 
-## Slide 11: Data Distribution Analysis
-- **Target Variable Distribution** [Show Group1-1.png]
-  - Most common class: "not_recom" (4,320 cases)
-  - Second most common: "priority" (4,266 cases)
-  - Rarest class: "recommend" (only 2 cases)
-- **Why This Matters**:
-  - Shows class imbalance
-  - Explains why some classes are harder to predict
-  - Helps in model selection and evaluation
-
-## Slide 12: Attribute-Class Relationships
-- **Stacked Bar Charts Analysis** [Show attribute vs class stacked charts]
-  - **Parents' Occupation**:
-    - Great pretentious parents tend to get higher priority
-    - Usual parents often receive not_recom
-  - **Nursery Quality**:
-    - Proper nurseries show better outcomes
-    - Critical nurseries often lead to not_recom
-  - **Form Completion**:
-    - Complete forms have better chances
-    - Foster care applications show different patterns
-  - **Number of Children**:
-    - More children often leads to priority
-    - Single children show varied outcomes
-  - **Housing Conditions**:
-    - Convenient housing correlates with better outcomes
-    - Critical housing often leads to not_recom
-  - **Financial Status**:
-    - Convenient finance shows better outcomes
-    - Inconvenient finance often leads to not_recom
-  - **Social Status**:
-    - Non-problematic cases get better outcomes
-    - Problematic cases often lead to not_recom
-  - **Health Status**:
-    - Recommended health leads to better outcomes
-    - Not recommended health often leads to not_recom
-- **Why This Matters**:
-  - Reveals patterns in decision-making
-  - Shows which factors influence outcomes
-  - Helps understand admission criteria
-  - Identifies potential biases
-
-## Slide 13: Feature Correlations
-- **Correlation Heatmap** [Show Group1-2.png]
-  - Shows relationships between all features
-  - Upper triangle masked for clarity
-  - Color intensity indicates correlation strength
-- **Key Insights**:
-  - Strong correlations between:
-    - Health and class
-    - Finance and social status
-    - Parents and housing
-  - **Why This Matters**:
-    - Helps understand feature relationships
-    - Identifies redundant features
-    - Guides feature selection
-
-## Slide 14: Model Performance
-- **Confusion Matrix** [Show confusion_matrix.png]
+## Slide 11: Model Performance
+- **Confusion Matrix** [Show: results/confusion_matrix.png]
   - Shows prediction accuracy for each class
   - Diagonal elements show correct predictions
   - Off-diagonal elements show misclassifications
@@ -199,8 +149,8 @@
   - Identifies which classes are confused
   - Helps in model improvement
 
-## Slide 15: Feature Importance
-- **Feature Importance Plot** [Show Group1-3.png]
+## Slide 12: Feature Importance
+- **Feature Importance Plot** [Show: results/feature_importance.png]
   - Health is the most important feature
   - Finance and social status are next
   - Has_nurs shows moderate importance
@@ -209,7 +159,7 @@
   - Helps in feature selection
   - Provides insights for policy makers
 
-## Slide 16: Model Comparison
+## Slide 13: Model Comparison
 - **Decision Tree vs Random Forest**
   - Decision Tree: 99% accuracy
   - Random Forest: 98% accuracy
@@ -218,8 +168,9 @@
   - Shows model reliability
   - Helps in model selection
   - Demonstrates trade-offs
+- **Image**: None (Text-based slide)
 
-## Slide 17: Practical Applications
+## Slide 14: Practical Applications
 - **How to Use the Results**:
   - Automated screening system
   - Decision support tool
@@ -228,8 +179,9 @@
   - Real-world implementation
   - Practical benefits
   - Impact on decision-making
+- **Image**: None (Text-based slide)
 
-## Slide 18: Future Work
+## Slide 15: Future Work
 - **Next Steps**:
   - Try more advanced models
   - Address class imbalance
@@ -239,8 +191,9 @@
   - Continuous improvement
   - Better handling of edge cases
   - More robust solutions
+- **Image**: None (Text-based slide)
 
-## Slide 19: References
+## Slide 16: References
 - UCI Machine Learning Repository
 - Course textbooks
 - Research papers
@@ -248,7 +201,9 @@
   - Academic integrity
   - Supporting evidence
   - Further reading
+- **Image**: None (Text-based slide)
 
-## Slide 20: Thank You
+## Slide 17: Thank You
 - **Contact Information**
-- **Questions?** 
+- **Questions?**
+- **Image**: None (Text-based slide) 
