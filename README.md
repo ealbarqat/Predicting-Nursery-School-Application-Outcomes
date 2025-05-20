@@ -34,7 +34,7 @@ Project/
 │   ├── class_distribution_*.png # Class distribution visualizations
 │   └── *_vs_class_stacked.png  # Attribute-class relationship charts
 ├── nursery_analysis.py         # Main analysis script
-├── groupL.tex                 # LaTeX report
+├── report_groupL.tex          # LaTeX report
 ├── nursery_presentation.md    # Presentation outline
 └── README.md                  # This file
 ```
