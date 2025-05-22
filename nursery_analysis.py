@@ -98,18 +98,35 @@ for column in df.columns[:-1]:  # Exclude the target column
     plt.savefig(f'results/{column}_vs_class_stacked.png')
 
 # 3.4 Decision Tree Visualization
-# Train a small decision tree for visualization
-dt_viz = DecisionTreeClassifier(max_depth=3, random_state=42)
-dt_viz.fit(X_train, y_train)
+# Train Decision Tree
+dt_model = DecisionTreeClassifier(random_state=42)
+dt_model.fit(X_train, y_train)
+dt_pred = dt_model.predict(X_test)
 
+# Create confusion matrix for Decision Tree
+plt.figure(figsize=(10, 8))
+cm_dt = confusion_matrix(y_test, dt_pred)
+sns.heatmap(cm_dt, 
+            annot=True, 
+            fmt='d', 
+            cmap='Blues',
+            xticklabels=le.classes_,
+            yticklabels=le.classes_)
+plt.title('Confusion Matrix - Decision Tree')
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.tight_layout()
+plt.savefig('results/confusion_matrix_decision_tree.png')
+
+# Visualize the full Decision Tree
 plt.figure(figsize=(20,10))
-plot_tree(dt_viz, 
+plot_tree(dt_model, 
           feature_names=X.columns,
           class_names=le.classes_,
           filled=True,
           rounded=True,
           fontsize=10)
-plt.title('Decision Tree Visualization (First 3 Levels)')
+plt.title('Decision Tree Visualization (Full Model)')
 plt.tight_layout()
 plt.savefig('results/decision_tree_viz.png')
 
@@ -128,11 +145,6 @@ plt.tight_layout()
 plt.savefig('results/correlation_heatmap.png')
 
 # 4. Model Building and Evaluation
-# Train Decision Tree
-dt_model = DecisionTreeClassifier(random_state=42)
-dt_model.fit(X_train, y_train)
-dt_pred = dt_model.predict(X_test)
-
 # Train Random Forest
 rf_model = RandomForestClassifier(random_state=42)
 rf_model.fit(X_train, y_train)
